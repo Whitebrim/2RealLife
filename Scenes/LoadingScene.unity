@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 521032684}
-  loagingImage: {fileID: 341987043}
+  loadingImage: {fileID: 341987043}
   progressText: {fileID: 1661269263}
   speed: 1
   fadeSpeed: 2

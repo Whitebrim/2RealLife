@@ -7,11 +7,12 @@ using TMPro;
 public class SceneLoading : MonoBehaviour {
 
     [SerializeField] private CanvasGroup canvasGroup;
-    [SerializeField] private Image loagingImage;
+    [SerializeField] private Image loadingImage;
     [SerializeField] private TextMeshProUGUI progressText;
     [Range(0.1f, 3f)] [SerializeField] private float speed = 1;
     [Range(0.1f, 3f)] [SerializeField] private float fadeSpeed = 1;
-    void Awake () {
+    private void Awake ()
+    {
         DontDestroyOnLoad(gameObject);
         StartCoroutine(AsyncLoad(1));
 	}
@@ -19,10 +20,9 @@ public class SceneLoading : MonoBehaviour {
     IEnumerator AsyncLoad(int index)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(index);
-        while (loagingImage.fillAmount != 1 || !operation.isDone)
+        while (loadingImage.fillAmount != 1 || !operation.isDone)
         {
-            loagingImage.fillAmount = Mathf.Min(operation.progress / 0.9f, loagingImage.fillAmount + (Time.deltaTime * speed));
-            progressText.text = string.Format("{0:0}%", loagingImage.fillAmount * 100);
+            ProgressUI(operation.progress);
             yield return new WaitForEndOfFrame();
         }
         float alpha = 1;
@@ -33,5 +33,11 @@ public class SceneLoading : MonoBehaviour {
             yield return new WaitForEndOfFrame();
         }
         Destroy(gameObject);
+    }
+
+    private void ProgressUI(float progress)
+    {
+        loadingImage.fillAmount = Mathf.Min(progress / 0.9f, loadingImage.fillAmount + (Time.deltaTime * speed));
+        progressText.text = string.Format("{0:0}%", loadingImage.fillAmount * 100);
     }
 }

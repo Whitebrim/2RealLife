@@ -18,45 +18,44 @@ public class MoodSystem
 	public OnMoodChangedEvent OnMoodChanged;
 	public void ChangeMood(Mood newMood)
 	{
-		if (availableMoods.Contains(newMood))
+		if (!availableMoods.Contains(newMood))
 		{
-			currentMood = newMood;
-			OnMoodChanged.Invoke(currentMood);
-			return;
+			throw new ArgumentException("This mood is not available for current entity");
 		}
-		throw new ArgumentException("This mood is not available for current entity");
+		currentMood = newMood;
+		OnMoodChanged.Invoke(currentMood);
+		return;
 	}
 
 	public void ChangeMood(string newMood)
 	{
 		Mood mood = availableMoods.Find((x) => x.GetMoodName == newMood);
-		if (mood!=null)
+		if(mood == null)
 		{
-			ChangeMood(mood);
-			return;
+			throw new ArgumentException("This mood is not available for current entity");
 		}
-		throw new ArgumentException("This mood is not available for current entity");
+
+		ChangeMood(mood);
+		return;
 	}
 
 	public void InitializeMood(Mood mood)
 	{
-		if(mood != null)
+		if(mood == null)
 		{
-			if (currentMood == null)
-			{
-				if (availableMoods.Contains(mood))
-				{
-					ChangeMood(mood);
-					return;
-				}
-				throw new ArgumentException("This mood is not available for current entity");
-			}
-			else
-			{
-				throw new Exception("Currend Mood is already initialized");
-			}
+			throw new ArgumentNullException("mood", "Mood is null");
 		}
-		throw new ArgumentNullException("mood", "Mood is null");
+		if (currentMood != null)
+		{
+			throw new Exception("Currend Mood is already initialized");
+		}
+		if (!availableMoods.Contains(mood))
+		{
+			throw new ArgumentException("This mood is not available for current entity");
+		}
+
+		ChangeMood(mood);
+		return;
 	}
 
 	public Mood GetMood(string mood)
@@ -77,7 +76,9 @@ public class MoodSystem
 			if (mood != null)
 			{
 				if (mood.consequences == null)
+				{
 					mood.consequences = new Dictionary<Action, ActionScript>();
+				}
 
 				if (!mood.consequences.ContainsKey(action))
 				{

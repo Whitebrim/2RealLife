@@ -13,8 +13,12 @@ public class MoodUI : SerializedMonoBehaviour
 	{
 		moodText.text = newMood.GetMoodName;
 		if (palette.TryGetValue(newMood, out Color32 color))
+		{
 			moodImage.color = color;
+		}
 		else
+		{
 			moodImage.color = Color.black;
+		}
 	}
 }

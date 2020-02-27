@@ -37,7 +37,9 @@ public class Cat : Entity
 			foreach (var action in availableActions)
 			{
 				if (action != null)
+				{
 					mood.CheckAvailableAction(action);
+				}
 			}
 		}
 		mood.CheckExtraActions(ref availableActions);
