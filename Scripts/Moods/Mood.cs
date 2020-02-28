@@ -17,6 +17,11 @@ public class Mood : SerializedScriptableObject
 #if UNITY_EDITOR
 	public void OnValidate()
 	{
+		if (string.IsNullOrEmpty(moodName))
+		{
+			moodName = name;
+		}
+
 		foreach (var consequence in consequences)
 		{
 			if (consequence.Value == null)

@@ -16,10 +16,10 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 15058f037311f5045b4e00fe40ceb84c, type: 2}
-    - {fileID: 11400000, guid: 3effb98bcf79ff040a1e79ee4c0690ad, type: 2}
-    - {fileID: 11400000, guid: 553f1be9234016b409c65089b4adf38e, type: 2}
     - {fileID: 11400000, guid: 941c47e5f9a107c40ad76d711c327f4e, type: 2}
+    - {fileID: 11400000, guid: 553f1be9234016b409c65089b4adf38e, type: 2}
+    - {fileID: 11400000, guid: 3effb98bcf79ff040a1e79ee4c0690ad, type: 2}
+    - {fileID: 11400000, guid: 15058f037311f5045b4e00fe40ceb84c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -47,7 +47,7 @@ MonoBehaviour:
       Data: 0
     - Name: $v
       Entry: 7
-      Data: 2|KickGreat, Assembly-CSharp
+      Data: 2|PlayGreat, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -62,7 +62,7 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 7
-      Data: 3|PatGreat, Assembly-CSharp
+      Data: 3|FeedGreat, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -77,7 +77,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 4|FeedGreat, Assembly-CSharp
+      Data: 4|PatGreat, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -92,7 +92,7 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 7
-      Data: 5|PlayGreat, Assembly-CSharp
+      Data: 5|KickGreat, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
