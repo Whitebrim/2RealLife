@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using Sirenix.OdinInspector;
 
-public class Entity : SerializedMonoBehaviour
+namespace Whitebrim
 {
-	public virtual void DoAction(string action)
+	public class Entity : SerializedMonoBehaviour
 	{
-		Debug.Log(action);
+		public virtual void DoAction(string action)
+		{
+			Debug.Log(action);
+		}
 	}
 }

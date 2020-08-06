@@ -1,19 +1,25 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 
-public class Player : Entity
+namespace Whitebrim
 {
-	[SerializeField] private Cat cat;
-	[SerializeField] private TextMeshProUGUI log;
-
-	public void ApplyAction(Action action)
+	public class Player : Entity
 	{
-		action.script.Execute(this);
-		cat.ApplyAction(action);
-	}
+		[SerializeField] private Cat cat;
+		[SerializeField] private TextMeshProUGUI log;
+		public List<Action> availableActions = new List<Action>();
 
-	public override void DoAction(string action)
-	{
-		log.text = "Игрок: " + action;
+		public void ApplyAction(Action action)
+		{
+			action.Execute(this, cat);
+			cat.ApplyAction(action.actionType, this);
+		}
+
+		public override void DoAction(string action)
+		{
+			log.text = "Игрок: " + action;
+		}
 	}
 }

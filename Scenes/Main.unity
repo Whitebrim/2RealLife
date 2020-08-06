@@ -161,6 +161,7 @@ MonoBehaviour:
     SerializationNodes: []
   cat: {fileID: 1859994057}
   log: {fileID: 1052034624}
+  availableActions: []
 --- !u!4 &85681678
 Transform:
   m_ObjectHideFlags: 0
@@ -274,6 +275,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -496,6 +498,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -652,6 +655,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.21568628, g: 0.23137255, b: 0.24313726, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -768,7 +772,7 @@ GameObject:
   - component: {fileID: 537552644}
   - component: {fileID: 537552643}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Mood Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,6 +812,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -881,6 +886,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -954,6 +960,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1143,9 +1150,9 @@ MonoBehaviour:
         m_MethodName: ApplyAction
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 15058f037311f5045b4e00fe40ceb84c,
+          m_ObjectArgument: {fileID: 11400000, guid: cee138964f343d94c9029f14a0928010,
             type: 2}
-          m_ObjectArgumentAssemblyTypeName: Action, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Whitebrim.Action, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1166,6 +1173,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.28627452, g: 0.3019608, b: 0.3137255, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1239,6 +1247,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1394,6 +1403,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1550,6 +1560,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1750,6 +1761,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.21568628, g: 0.23137255, b: 0.24313726, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1857,9 +1869,9 @@ MonoBehaviour:
         m_MethodName: ApplyAction
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 941c47e5f9a107c40ad76d711c327f4e,
+          m_ObjectArgument: {fileID: 11400000, guid: 3b604083f0190244bb267a7e2e631dc4,
             type: 2}
-          m_ObjectArgumentAssemblyTypeName: Action, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Whitebrim.Action, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1880,6 +1892,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.28627452, g: 0.3019608, b: 0.3137255, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1953,6 +1966,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2059,9 +2073,9 @@ MonoBehaviour:
         m_MethodName: ApplyAction
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 3effb98bcf79ff040a1e79ee4c0690ad,
+          m_ObjectArgument: {fileID: 11400000, guid: 0cda510cec733eb459abcfd79ee52e4a,
             type: 2}
-          m_ObjectArgumentAssemblyTypeName: Action, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Whitebrim.Action, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2082,6 +2096,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.28627452, g: 0.3019608, b: 0.3137255, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2258,6 +2273,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.21568628, g: 0.23137255, b: 0.24313726, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2288,16 +2304,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1721193191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46095e390fd5f124b952cfde5ce27e15, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f55c05503b87be42bd59891af9a39d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 5410e971071af9c48bfcb5924194418f, type: 2}
-    - {fileID: 11400000, guid: c2e9108872d1c5647932399f626d5067, type: 2}
-    - {fileID: 11400000, guid: 2284a369d0c517b45bd4d74212284962, type: 2}
+    - {fileID: 11400000, guid: 5047d6aec714ce34b9e5fa87ae4f008d, type: 2}
+    - {fileID: 11400000, guid: 8a9c2804234567d4786ab378d98e8e96, type: 2}
+    - {fileID: 11400000, guid: a6e92b67e1f913e41a8f55e59b4865de, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -2305,12 +2321,12 @@ MonoBehaviour:
     SerializationNodes:
     - Name: palette
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[Mood, Assembly-CSharp],[UnityEngine.Color32,
+      Data: 0|System.Collections.Generic.Dictionary`2[[Whitebrim.Mood, Assembly-CSharp],[UnityEngine.Color32,
         UnityEngine.CoreModule]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Mood, Assembly-CSharp]],
-        mscorlib
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Whitebrim.Mood,
+        Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -2328,13 +2344,13 @@ MonoBehaviour:
       Data: UnityEngine.Color32, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 188
+      Data: 197
     - Name: 
       Entry: 3
-      Data: 43
+      Data: 29
     - Name: 
       Entry: 3
-      Data: 43
+      Data: 29
     - Name: 
       Entry: 3
       Data: 255
@@ -2355,13 +2371,13 @@ MonoBehaviour:
       Data: UnityEngine.Color32, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 221
+      Data: 202
     - Name: 
       Entry: 3
-      Data: 211
+      Data: 201
     - Name: 
       Entry: 3
-      Data: 30
+      Data: 45
     - Name: 
       Entry: 3
       Data: 255
@@ -2382,13 +2398,13 @@ MonoBehaviour:
       Data: UnityEngine.Color32, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 77
+      Data: 119
     - Name: 
       Entry: 3
-      Data: 192
+      Data: 183
     - Name: 
       Entry: 3
-      Data: 48
+      Data: 41
     - Name: 
       Entry: 3
       Data: 255
@@ -2492,9 +2508,9 @@ MonoBehaviour:
         m_MethodName: ApplyAction
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 553f1be9234016b409c65089b4adf38e,
+          m_ObjectArgument: {fileID: 11400000, guid: a8a1e6c496e9e0e4fbb9f2150076cb7e,
             type: 2}
-          m_ObjectArgumentAssemblyTypeName: Action, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Whitebrim.Action, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2515,6 +2531,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.28627452, g: 0.3019608, b: 0.3137255, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2588,6 +2605,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2724,9 +2742,9 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 5410e971071af9c48bfcb5924194418f, type: 2}
-    - {fileID: 11400000, guid: c2e9108872d1c5647932399f626d5067, type: 2}
-    - {fileID: 11400000, guid: 2284a369d0c517b45bd4d74212284962, type: 2}
+    - {fileID: 11400000, guid: 5047d6aec714ce34b9e5fa87ae4f008d, type: 2}
+    - {fileID: 11400000, guid: 8a9c2804234567d4786ab378d98e8e96, type: 2}
+    - {fileID: 11400000, guid: a6e92b67e1f913e41a8f55e59b4865de, type: 2}
     - {fileID: 1721193195}
     - {fileID: 0}
     SerializedBytesString: 
@@ -2736,13 +2754,14 @@ MonoBehaviour:
     SerializationNodes:
     - Name: mood
       Entry: 7
-      Data: 0|MoodSystem, Assembly-CSharp
+      Data: 0|Whitebrim.MoodSystem, Assembly-CSharp
     - Name: currentMood
       Entry: 6
       Data: 
     - Name: availableMoods
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[Mood, Assembly-CSharp]], mscorlib
+      Data: 1|System.Collections.Generic.List`1[[Whitebrim.Mood, Assembly-CSharp]],
+        mscorlib
     - Name: 
       Entry: 12
       Data: 3
@@ -2763,7 +2782,7 @@ MonoBehaviour:
       Data: 
     - Name: OnMoodChanged
       Entry: 7
-      Data: 2|OnMoodChangedEvent, Assembly-CSharp
+      Data: 2|Whitebrim.OnMoodChangedEvent, Assembly-CSharp
     - Name: m_PersistentCalls
       Entry: 7
       Data: 3|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
@@ -2832,10 +2851,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   availableActions:
-  - {fileID: 11400000, guid: 941c47e5f9a107c40ad76d711c327f4e, type: 2}
-  - {fileID: 11400000, guid: 553f1be9234016b409c65089b4adf38e, type: 2}
-  - {fileID: 11400000, guid: 3effb98bcf79ff040a1e79ee4c0690ad, type: 2}
-  - {fileID: 11400000, guid: 15058f037311f5045b4e00fe40ceb84c, type: 2}
+  - {fileID: 11400000, guid: bbd68d5f7dc47e84ea8b13c246ab0113, type: 2}
+  - {fileID: 11400000, guid: 7c1f642d499254a478724e7a4b085b32, type: 2}
+  - {fileID: 11400000, guid: ff8bcd6ba9dc1104aa1c78c1066d59c4, type: 2}
+  - {fileID: 11400000, guid: de337ada9b7ec5a4fa0809b3111271fb, type: 2}
   log: {fileID: 1052034624}
 --- !u!4 &1859994058
 Transform:
@@ -2903,6 +2922,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

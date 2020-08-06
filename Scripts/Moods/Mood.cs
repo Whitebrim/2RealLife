@@ -2,31 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class Mood : SerializedScriptableObject
+namespace Whitebrim
 {
-	[SerializeField] private string moodName;
-	[DictionaryDrawerSettings(IsReadOnly = true)] public Dictionary<Action, ActionScript> consequences = new Dictionary<Action, ActionScript>();
-
-	public string GetMoodName
+	[CreateAssetMenu]
+	public class Mood : SerializedScriptableObject
 	{
-		get { return moodName; }
-		protected set { moodName = value; }
-	}
+		[SerializeField]
+		private string moodName;
+		[DictionaryDrawerSettings(IsReadOnly = true)]
+		public Dictionary<ActionType, Consequence> consequences = new Dictionary<ActionType, Consequence>();
 
-#if UNITY_EDITOR
-	public void OnValidate()
-	{
-		if (string.IsNullOrEmpty(moodName))
+		public string GetMoodName
 		{
-			moodName = name;
+			get { return moodName; }
+			protected set { moodName = value; }
 		}
 
-		foreach (var consequence in consequences)
+	#if UNITY_EDITOR
+		public void OnValidate()
 		{
-			if (consequence.Value == null)
-				Debug.LogError("Consequence is Null", this);
+			if (string.IsNullOrEmpty(moodName))
+			{
+				moodName = name;
+			}
 		}
+	#endif
 	}
-#endif
 }
