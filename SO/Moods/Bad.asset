@@ -302,7 +302,7 @@ MonoBehaviour:
       Data: 
     - Name: changeMood
       Entry: 5
-      Data: false
+      Data: true
     - Name: newMood
       Entry: 10
       Data: 9
